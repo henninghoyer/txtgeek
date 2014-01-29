@@ -1,0 +1,195 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+/*reset utilities*/
+sup {
+    vertical-align: super;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    color: #7da7ca;
+}
+
+body {
+    font-size: 100%; /*should be 16px*/
+    background-color: #CCC;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Typographic Stuff*/
+h1 {
+    font-size: 36px; /*fallback for those browsers not supporting rem*/
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 24px; /*fallback for those browsers not supporting rem*/
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 18px; /*fallback for those browsers not supporting rem*/
+    font-size: 1.3125rem;
+}
+
+p {
+    font-size: 16px; /*fallback for those browsers not supporting rem*/
+    font-size: 1rem;
+}
+
+header > h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px; /*fallback for those browsers not supporting rem*/
+    font-size: 3rem;
+    text-align: center;
+    margin: 3.5rem 0rem 2rem 0rem;
+}
+
+/*Basic Layout*/
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#content {
+    width: 62.962962962963%; /*680px*/
+    margin: 0 auto;
+}
+
+#content > #main {
+    margin: 0 auto;
+}
+
+#main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#main > section {
+    width: 66%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pre {
+    line-height: 1.3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+}
+
+textarea {
+    max-width: 100%;
+    resize: none;
+    background-color: #999;
+    color: #000;
+    font-size: 0.95rem;
+    /*border: 1px solid #333;*/
+    border-radius: 5px;
+    padding: 2px 0px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3) inset, 0px 1px 0px rgba(255, 255, 255, 0.1), 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+#out > .result {
+    background-color: #999;
+    color: #000;
+    font-size: 0.95rem;
+    border: 1px solid #7da7ca;
+    border-radius: 5px;
+    padding: 4px 0px;
+    margin-bottom: 1rem;
+    margin-top: 4px;
+    line-height: 1.25rem;
+    max-width: 100%;
+    max-height: 5rem;
+}
+
+#out {
+    display: none;
+}
+
+.fn {
+    margin: 2rem auto;
+    width: 66%;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.actionButton {
+    margin-top: 0.6rem;
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin: 2rem auto;
+    width: 66%;
+    border-top: 1px solid #7da7ca;
+}
