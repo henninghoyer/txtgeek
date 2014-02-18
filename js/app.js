@@ -37,6 +37,8 @@ var t2g = (function () {
     outBin.innerHTML = toBin(input);
     outHex.innerHTML = toHex(input);
 
+    pre.style.display = 'none';
+    fn.style.display = 'none';
     inSec.style.display   = 'none';
     outSec.style.display  = 'block';
   }
@@ -46,6 +48,9 @@ var t2g = (function () {
 
     inSec.style.display   = 'block';
     outSec.style.display  = 'none';
+    pre.style.display = 'block';
+    fn.style.display = 'block';
+    inField.focus();
 
     outBin.innerHTML = '';
     outHex.innerHTML = '';
@@ -60,6 +65,8 @@ var t2g = (function () {
     outHex  = document.querySelector('#outHex');
     actBtnT = document.querySelector('#fireinthehole');
     actBtnR = document.querySelector('#elohehtnierif');
+    pre     = document.querySelector('.pre');
+    fn      = document.querySelector('.fn');
 
     actBtnT.addEventListener('click', function(e) {
       actionHandlerTranslate();
